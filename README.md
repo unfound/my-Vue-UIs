@@ -9,3 +9,5 @@
 > 安装并配置html-webpack-plugin用来自动生成HTML文件，安装并配置clean-webpack-pugin用来清除旧的dist(这里注意，新版clean插件用法与官网指南上略有不同)
 ---
 > 安装并配置webpack-dev-server用来做本地开发服务器并[配置HMR](https://webpack.docschina.org/guides/hot-module-replacement/#启用-hmr)，过程中遇到了按照官网步骤配置却怎么都不能开启HMR的情况，最后重装了依赖就解决了。
+---
+> 安装webpack-merge进行生产环境以及开发环境的[分别配置](https://webpack.docschina.org/guides/production/#配置)。

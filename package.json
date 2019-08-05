@@ -4,7 +4,8 @@
   "description": "UI",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./build/webpack.config.js",
+    "dev": "webpack-dev-server --open --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js",
     "test": "webpack --config ./build/webpack.config.js"
   },
   "keywords": [
@@ -28,6 +29,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.38.0",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   }
 }
