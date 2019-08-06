@@ -11,6 +11,9 @@ module.exports = merge(common, {
     hot: true
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    // 开启HRM
+    new webpack.HotModuleReplacementPlugin(),
+    // 开发环境可以显示打包文件所在文件夹，执行时间较长
+    new webpack.NamedChunksPlugin()
   ]
 })

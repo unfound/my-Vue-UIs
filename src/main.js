@@ -3,6 +3,12 @@ import './style.css'
 
 console.log('Hello world !xxx')
 
+const noname = () => {
+  console.log('noname')
+}
+
+noname()
+
 if (module.hot) {
   console.log('hot')
   console.log(module.hot)
