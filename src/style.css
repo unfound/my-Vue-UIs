@@ -3,3 +3,6 @@ body {
   padding: 0;
   color: red;
 }
+.animate {
+  transform: rotate(30,30,30)
+}

@@ -12,6 +12,12 @@
 ---
 > 安装webpack-merge进行生产环境以及开发环境的[分别配置](https://webpack.docschina.org/guides/production/#配置)。
 ---
-> ```npm i --save-dev babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime```安装babel所需的所有依赖来将es6以上的js语法转化为es5甚至更低版本以适应不同浏览器的兼容问题。顺便安装eslint-loader用以检查js语法规范。可参考[babel配置](https://webpack.docschina.org/loaders/babel-loader/)
+> ```npm i --save-dev babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime```安装babel所需的所有依赖来将es6以上的js语法转化为es5甚至更低版本以适应不同浏览器的兼容问题，可参考[babel配置](https://webpack.docschina.org/loaders/babel-loader/)。顺便安装eslint-loader用以检查js语法规范以及安装babel-eslint可用来让eslint支持babel转化后的语法检查，参考[eslint-babel](https://github.com/babel/babel-eslint)。
 ---
-> 配置代码分离以及缓存，将公用依赖代码分离到独立模块中可以减少代码体积而且有助于浏览器的缓存，参考[代码分离](https://webpack.docschina.org/guides/code-splitting/)和[缓存](https://webpack.docschina.org/guides/caching/)
+> 配置代码分离、缓存和懒加载，将公用依赖代码分离到独立模块中可以减少代码体积而且有助于浏览器的缓存，参考[代码分离](https://webpack.docschina.org/guides/code-splitting/)和[缓存](https://webpack.docschina.org/guides/caching/)以及[懒加载](https://webpack.docschina.org/guides/lazy-loading/), 懒加载需要安装@babel/plugin-syntax-dynamic-import插件进行辅助[http://babel.docschina.org/docs/en/babel-plugin-syntax-dynamic-import](http://babel.docschina.org/docs/en/babel-plugin-syntax-dynamic-import)
+---
+> ```npm i --save-dev postcss-import postcss-loader postcss-url autoprefixer```, 安装并配置postcss以及autoprefixer用来处理css兼容问题，可参考[postcss-loader](https://webpack.docschina.org/loaders/postcss-loader/)。
+---
+> 配置[mini-css-extract-plugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)以便于生产环境中，来将css单独提取出来。并安装```npm i --save-dev less less-loader```配置less预处理器，简化css编写。
+---
+> 安装```npm i --save-dev copy-webpack-plugin```并配置，用来处理一部分不需要webpack处理的文件

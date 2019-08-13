@@ -1,23 +1,30 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es6": true
+  root: true,
+  env: {
+    browser: true,
+    es6: true
   },
-  "extends": [
+  extends: [
     "plugin:vue/essential",
     "standard"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  // The most rules of eslint-plugin-vue require vue-eslint-parser to check <template> ASTs.
+  // parser: "babel-eslint",
+  // "globals": {
+  //   "Atomics": "readonly",
+  //   "SharedArrayBuffer": "readonly"
+  // },
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    // https://vuejs.github.io/eslint-plugin-vue/user-guide/#editor-integrations
+    parser: 'babel-eslint'
+    // "ecmaVersion": 2018,
+    // "sourceType": "module"
   },
-  "plugins": [
+  plugins: [
     "vue"
   ],
-  "rules": {
+  rules: {
+    // allow async-await
+    'generator-star-spacing': 'off'
   }
 };
