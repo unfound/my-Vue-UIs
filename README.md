@@ -1,4 +1,4 @@
-# VUE组件搭建步骤
+# VUE脚手架搭建步骤
 
 > 首先 ```npm init``` 初始化目录，然后 ```npm i --save-dev webpack webpack-cli```安装webpack以及命令工具
 ---
