@@ -21,3 +21,5 @@
 > 配置[mini-css-extract-plugin](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)以便于生产环境中，来将css单独提取出来。并安装```npm i --save-dev less less-loader```配置less预处理器，简化css编写。
 ---
 > 安装```npm i --save-dev copy-webpack-plugin```并配置，用来处理一部分不需要webpack处理的文件
+---
+> 安装并配置vue相关的loader和设置，参考[vue-loader](https://vue-loader.vuejs.org/)
